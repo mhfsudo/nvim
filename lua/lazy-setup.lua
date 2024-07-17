@@ -11,5 +11,9 @@ vim.opt.conceallevel = 2 -- required for Obsidian
 vim.g.mapleader = " "
 -- save with Control + s
 vim.keymap.set("n", "<C-s>", ":w<CR>", {})
+-- close with Control + w
+vim.keymap.set("n", "<C-w>", ":q<CR>", {})
+-- save and close with Control + q
+vim.keymap.set("n", "<C-q>", ":wq<CR>", {})
 -- switch between windows with Tab
 vim.keymap.set("n", "<Tab>", "<C-w>w", { noremap = true, silent = true })
