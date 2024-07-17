@@ -13,7 +13,7 @@ return {
 				null_ls.builtins.formatting.markdownlint, -- markdown
 				null_ls.builtins.formatting.prettier, -- javascript
 				null_ls.builtins.formatting.stylua, -- lua
-				null_ls.builtins.diagnostics.eslint, -- javascript
+				null_ls.builtins.diagnostics.erb_lint, -- javascript
 			},
 		})
 		vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {})
