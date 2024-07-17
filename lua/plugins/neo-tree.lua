@@ -10,13 +10,24 @@ return {
   },
   config = function()
     require("neo-tree").setup({
-      close_if_last_window = false,
       filesystem = {
         hijack_netrw_behavior = "open_default",
         filtered_items = {
           hide_dotfiles = false,
           hide_gitignored = false,
         },
+      },
+      window = {
+        position = "left",
+        width = 32,
+      },
+      event_handlers = {
+        {
+          event = "neo_tree_buffer_enter",
+          handler = function()
+            vim.opt.relativenumber = true
+          end,
+        }
       },
     })
     vim.keymap.set("n", "<C-t>", ":Neotree filesystem reveal left<CR>", {})
