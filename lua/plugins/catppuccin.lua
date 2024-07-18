@@ -8,8 +8,8 @@ return {
 	config = function()
 		local config = require("catppuccin")
 		config.setup({
-			flavour = "macchiato", -- latte(white), frappe, macchiato, mocha
-			transparent_background = true,
+			flavour = "mocha", -- latte(white), frappe, macchiato, mocha
+			transparent_background = false,
 		})
 		vim.cmd.colorscheme("catppuccin")
 	end,
