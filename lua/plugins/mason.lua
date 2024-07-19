@@ -11,31 +11,10 @@ return {
 	{
 		-- (https://github.com/williamboman/mason-lspconfig.nvim)
 		"williamboman/mason-lspconfig.nvim",
-		config = function()
-			require("mason-lspconfig").setup({
-				ensure_installed = {
-					"bashls",
-					"cssls",
-					"dockerls",
-					"gopls",
-					"groovyls",
-					"html",
-					"helm_ls",
-					"jdtls",
-					"biome",
-					"jsonls",
-					"kotlin_language_server",
-					"ltex",
-					"lua_ls",
-					"markdown_oxide",
-					"basedpyright",
-					"terraformls",
-					"tsserver",
-					"vimls",
-					"yamlls",
-				},
-			})
-		end,
+    lazy = false,
+    opts = {
+      auto_install = true,
+    },
 	},
 	{
 		-- (https://github.com/neovim/nvim-lspconfig)
