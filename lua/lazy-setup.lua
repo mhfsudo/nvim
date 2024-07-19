@@ -17,3 +17,9 @@ vim.keymap.set("n", "<C-w>", ":q<CR>", {})
 vim.keymap.set("n", "<C-q>", ":wq<CR>", {})
 -- switch between windows with Tab
 vim.keymap.set("n", "<Tab>", "<C-w>w", { noremap = true, silent = true })
+
+-- Navigate vim panes better
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>')
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>')
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>')
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
